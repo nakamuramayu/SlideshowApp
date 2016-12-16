@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF97089C1DF2A4450034CD88 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97089B1DF2A4450034CD88 /* SecondViewController.swift */; };
 		EF97193D1DE9B54500A0554B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97193C1DE9B54500A0554B /* AppDelegate.swift */; };
 		EF97193F1DE9B54500A0554B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97193E1DE9B54500A0554B /* ViewController.swift */; };
 		EF9719421DE9B54500A0554B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9719401DE9B54500A0554B /* Main.storyboard */; };
 		EF9719441DE9B54500A0554B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9719431DE9B54500A0554B /* Assets.xcassets */; };
 		EF9719471DE9B54500A0554B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9719451DE9B54500A0554B /* LaunchScreen.storyboard */; };
+		EFA014101DF5465800CFFD40 /* DSCF3253_TP_V.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFA0140F1DF5465800CFFD40 /* DSCF3253_TP_V.jpg */; };
+		EFA014121DF5466C00CFFD40 /* KAZU_DSCF5168_TP_V.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFA014111DF5466C00CFFD40 /* KAZU_DSCF5168_TP_V.jpg */; };
+		EFA014141DF5467700CFFD40 /* SIN0I9A3684_TP_V.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFA014131DF5467700CFFD40 /* SIN0I9A3684_TP_V.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF97089B1DF2A4450034CD88 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EF9719391DE9B54500A0554B /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF97193C1DE9B54500A0554B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF97193E1DE9B54500A0554B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		EF9719431DE9B54500A0554B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9719461DE9B54500A0554B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF9719481DE9B54500A0554B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA0140F1DF5465800CFFD40 /* DSCF3253_TP_V.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSCF3253_TP_V.jpg; sourceTree = "<group>"; };
+		EFA014111DF5466C00CFFD40 /* KAZU_DSCF5168_TP_V.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KAZU_DSCF5168_TP_V.jpg; sourceTree = "<group>"; };
+		EFA014131DF5467700CFFD40 /* SIN0I9A3684_TP_V.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SIN0I9A3684_TP_V.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,11 @@
 			children = (
 				EF97193C1DE9B54500A0554B /* AppDelegate.swift */,
 				EF97193E1DE9B54500A0554B /* ViewController.swift */,
+				EFA014131DF5467700CFFD40 /* SIN0I9A3684_TP_V.jpg */,
+				EFA014111DF5466C00CFFD40 /* KAZU_DSCF5168_TP_V.jpg */,
+				EFA0140F1DF5465800CFFD40 /* DSCF3253_TP_V.jpg */,
 				EF9719401DE9B54500A0554B /* Main.storyboard */,
+				EF97089B1DF2A4450034CD88 /* SecondViewController.swift */,
 				EF9719431DE9B54500A0554B /* Assets.xcassets */,
 				EF9719451DE9B54500A0554B /* LaunchScreen.storyboard */,
 				EF9719481DE9B54500A0554B /* Info.plist */,
@@ -124,6 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9719471DE9B54500A0554B /* LaunchScreen.storyboard in Resources */,
+				EFA014121DF5466C00CFFD40 /* KAZU_DSCF5168_TP_V.jpg in Resources */,
+				EFA014101DF5465800CFFD40 /* DSCF3253_TP_V.jpg in Resources */,
+				EFA014141DF5467700CFFD40 /* SIN0I9A3684_TP_V.jpg in Resources */,
 				EF9719441DE9B54500A0554B /* Assets.xcassets in Resources */,
 				EF9719421DE9B54500A0554B /* Main.storyboard in Resources */,
 			);
@@ -136,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF97089C1DF2A4450034CD88 /* SecondViewController.swift in Sources */,
 				EF97193F1DE9B54500A0554B /* ViewController.swift in Sources */,
 				EF97193D1DE9B54500A0554B /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +313,7 @@
 				EF97194D1DE9B54500A0554B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
