@@ -17,11 +17,13 @@ class ViewController: UIViewController {
         "KAZU_DSCF5168_TP_V.jpg",
         "SIN0I9A3684_TP_V.jpg",
         ]
-
+    
+    var isTimerReStart = false
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var onNextbutton: UIButton!
     @IBOutlet weak var onPrevbutton: UIButton!
+    @IBOutlet weak var startStopbutton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,22 @@ class ViewController: UIViewController {
         let name = imageNameArray[dispImageNo]
         let image = UIImage(named: name)
         imageView.image = image
+        startStopbutton.setTitle("再生", for: .normal)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if isTimerReStart == true {
+            timer = Timer.scheduledTimer(
+                timeInterval: 2.0,
+                target: self,
+                selector: #selector(self.onNext),
+                userInfo: nil,
+                repeats: true)
+            timer?.fire()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,11 +89,13 @@ class ViewController: UIViewController {
             timer?.fire()
             onNextbutton.isEnabled = false
             onPrevbutton.isEnabled = false
+            startStopbutton.setTitle("停止", for: .normal)
         } else {
             timer?.invalidate()
             timer = nil
             onNextbutton.isEnabled = true
             onPrevbutton.isEnabled = true
+            startStopbutton.setTitle("再生", for: .normal)
         }
         
     }
@@ -91,6 +111,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func extend(_ sender: Any) {
+        if timer != nil {
+            isTimerReStart = true
+        }
+        timer?.invalidate()
+        timer = nil
     }
     
     

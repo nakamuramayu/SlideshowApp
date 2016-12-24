@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -25,12 +25,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMH-Wt-WQV">
-                                <rect key="frame" x="146" y="588" width="83" height="33"/>
+                                <rect key="frame" x="169" y="588" width="37" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="rmD-FP-FfO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <state key="normal" title="再生/停止">
+                                <state key="normal" title="再生">
                                     <color key="titleColor" red="0.2074561482" green="0.72336632010000002" blue="0.23761050049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULd-2A-dZk">
-                                <rect key="frame" x="273" y="591" width="46" height="30"/>
+                                <rect key="frame" x="250" y="591" width="37" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
@@ -46,9 +46,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j79-xL-et2">
-                                <rect key="frame" x="53" y="591" width="46" height="30"/>
+                                <rect key="frame" x="85" y="591" width="37" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Lrh-K0-9AS"/>
                                     <constraint firstAttribute="height" constant="30" id="fgK-cy-d5H"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -86,10 +85,8 @@
                             <constraint firstItem="QMH-Wt-WQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RKj-Nc-V2E"/>
                             <constraint firstItem="QMH-Wt-WQV" firstAttribute="leading" secondItem="j79-xL-et2" secondAttribute="trailing" constant="47" id="SZ0-C3-Mfq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j79-xL-et2" secondAttribute="bottom" constant="46" id="WAi-tv-0Lm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ULd-2A-dZk" secondAttribute="trailing" constant="40" id="YXv-vd-eHe"/>
                             <constraint firstItem="j79-xL-et2" firstAttribute="top" secondItem="ULd-2A-dZk" secondAttribute="top" id="ZXq-kO-1ti"/>
                             <constraint firstItem="QMH-Wt-WQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gAC-mq-da8"/>
-                            <constraint firstItem="j79-xL-et2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="kCq-GQ-Jtu"/>
                             <constraint firstItem="QMH-Wt-WQV" firstAttribute="bottom" secondItem="ULd-2A-dZk" secondAttribute="bottom" id="mzd-5l-tH5"/>
                             <constraint firstItem="COn-gU-0Ta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wPa-72-IrN"/>
                             <constraint firstItem="QMH-Wt-WQV" firstAttribute="centerX" secondItem="COn-gU-0Ta" secondAttribute="centerX" id="xyl-G2-icm"/>
@@ -99,6 +96,7 @@
                         <outlet property="imageView" destination="COn-gU-0Ta" id="jsW-4s-dW8"/>
                         <outlet property="onNextbutton" destination="ULd-2A-dZk" id="hhq-wX-ndJ"/>
                         <outlet property="onPrevbutton" destination="j79-xL-et2" id="Bk1-p2-baH"/>
+                        <outlet property="startStopbutton" destination="QMH-Wt-WQV" id="0X0-TD-c5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
